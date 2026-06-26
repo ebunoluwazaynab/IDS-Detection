@@ -1,0 +1,15 @@
+# Model checkpoints and weights
+*.pth
+*.pt
+*.ckpt
+
+# Data and metrics files
+*.csv
+*.json
+
+# Dataset directories
+cicids2018/
+
+# Python cache and notebooks
+__pycache__/
+.ipynb_checkpoints/
