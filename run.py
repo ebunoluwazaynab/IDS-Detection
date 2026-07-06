@@ -217,7 +217,7 @@ print("Setting up teachers and attacks...")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 fgsm_teacher = DDoSDetector(num_classes=1).to(device)
-fgsm_teacher.load_state_dict(torch.load('fgsm_teacher_model.pth', map_location=device))
+fgsm_teacher.load_state_dict(torch.load('cicids2018/fgsm_teacher_model.pth', map_location=device))
 fgsm_teacher.eval()
 
 ifgsm_teacher = DDoSDetector(num_classes=1).to(device)
